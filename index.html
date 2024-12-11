@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="images/Lovepik_com-611713803-Round delivery business label sticker.png" alt="Логотип" width="200" height="200">
-        <button>Вход</button> <button>Регистрация</button>
+    <header class="header">
+        <img class="header__img" src="images/Lovepik_com-611713803-Round delivery business label sticker.png" alt="Логотип" width="200" height="200">
+        <button class="header__btn">Вход</button> <button>Регистрация</button>
         <form action="/"></form>
                 <h1>Вход</h1>
                 <input type="tel" name="phone" placeholder="Номер телефона">
@@ -20,18 +21,18 @@
                 <input type="tel" name="phone" placeholder="Номер телефона">
                 <input type="password" name="password" placeholder="Пароль">
                 <button>Зарегистрироваться</button>
-        <nav>
-            <ul>
-                <li> <a href="">Личный кабинет</a></li>
-                <li> <a href="Personal dictionary.html">Личный словарь</a></li>
-                <li> <a href="">Тренировочные тесты</a></li>
-                <li> <a href="">Подача заявок</a></li>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--active"> <a class="menu__link" href="Personal acount.html">Личный кабинет</a></li>
+                <li class="menu__item"> <a class="menu__link" href="Personal dictionary.html">Личный словарь</a></li>
+                <li class="menu__item"> <a class="menu__link" href="Tests.html">Тренировочные тесты</a></li>
+                <li class="menu__item"> <a class="menu__link" href="Applications.html">Подача заявок</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div>Слова для запоминания</div>
+        <section class="header">
+            <ul class="menu__list">Слова для запоминания<ul>
             <ul>
                 <li>Слово 1</li>
                 <li>Слово 2</li>
