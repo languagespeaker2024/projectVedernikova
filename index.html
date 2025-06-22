@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="header container">
+    <header class="header">
         <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200">
-        <input type="text"><button class="header__btn">Поиск слов</button>
-        <button class="header__btn">Вход</button> <button>Регистрация</button>
+        <div id="popup-overlay">
+            <button onclick="openPopup()">Вход</button>
+            <button onclick="closePopup()">Регистрация</button>
+        </div>
+        <div class="header-search-block">
+                        <form id="search_form" action="/search" method="get">
+                            <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
+                            <button type="button" class="header-search-submit"></button>
+                         </form>
+                    </div>
         <nav class="header__menu">
             <ul class="menu__list">
                 <li class="menu__item menu__item--active"> <a class="menu__link" href="Personalacсount.html">Личный кабинет</a></li>
@@ -21,13 +29,17 @@
             </ul>
         </nav>
     </header>
-    <main class="main container">
-        Учи китайский вместе с нами
+    <main class="main">
+        <img src="images\Picsart_25-06-22_14-58-19-917.jpg" alt="pictures" width="700" height="700">
         <section class="header"><h1 class="header title">Слова для запоминания</h1>
-            <ul class="menu__list"></ul>
+            <ul class="menu__list">
+                学生 - ученик
+                教授 - профессор
+                学校 - школа, университет
+            </ul>
         </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer">
         <p>Сайт создан Ведерниковой Ириной, группа 27-АК</p>
     </footer>
 </html>
