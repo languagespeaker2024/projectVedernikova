@@ -3,43 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Документ</title>
+    <style> 
+    body { 
+        font-family: Montserrat, sans-serif; 
+        line-height: 1.5; color: #8c0473; 
+        margin: 0; padding: 0;
+    } 
+    
+    .header { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; padding: 20px; 
+        background-color: #f8f8f8; 
+    } 
+    
+    .header__img { 
+        max-width: 200px; 
+        height: auto; 
+    }
+    
+    .header-search-block { 
+        flex-grow: 1; 
+        text-align: left;
+    }
+
+    .header-search-block form { 
+        display: inline-flex; 
+        align-items: center; 
+    } 
+
+    input[type="search"] {
+        padding: 8px; font-size: 16px;
+        border-radius: 4px; 
+        border: 1px solid #ccc;
+    } 
+        
+    button.header-search-submit {
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+    } 
+    
+    nav.menu {
+        display: flex; 
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0;
+    } 
+    
+    .menu__item {
+        margin-right: 20px;
+    } 
+
+    a.menu__link {
+        text-decoration: none; 
+        color: inherit;
+    } 
+
+    main.main {
+        display: grid; 
+        place-items: center; 
+        min-height: calc(100vh - 160px)
+    } 
+
+    img { 
+        max-width: 75%; 
+        height: auto;
+    }
+
+    section {
+        text-align: center; 
+        margin-bottom: 20px;
+    } 
+
+    ul.menu__list {
+         list-style-type: none; 
+         padding: 0;
+        } 
+
+    li {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    } 
+
+    footer.footer {
+        background-color: #f8f8f8; 
+        padding: 20px; 
+        text-align: center; 
+    } 
+</style>
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200">
-        <div id="popup-overlay">
-            <button onclick="openPopup()">Вход</button>
-            <button onclick="closePopup()">Регистрация</button>
-        </div>
+        <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" />
         <div class="header-search-block">
-                        <form id="search_form" action="/search" method="get">
-                            <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
-                            <button type="button" class="header-search-submit"></button>
-                         </form>
-                    </div>
+            <form id="search_form" action="/search" method="get">
+                <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов">
+                <button type="button" class="header-search-submit"></button>
+            </form>
+        </div>
         <nav class="header__menu">
             <ul class="menu__list">
-                <li class="menu__item menu__item--active"> <a class="menu__link" href="Personalacсount.html">Личный кабинет</a></li>
+                <li class="menu__item menu__item--active"> <a class="menu__link" href="Personalaccount.html">Личный кабинет</a></li>
                 <li class="menu__item"> <a class="menu__link" href="Personaldictionary.html">Личный словарь</a></li>
                 <li class="menu__item"> <a class="menu__link" href="Tests.html">Тренировочные тесты</a></li>
                 <li class="menu__item"> <a class="menu__link" href="Applications.html">Подача заявок</a></li>
             </ul>
         </nav>
     </header>
+    
     <main class="main">
-        <img src="images\Picsart_25-06-22_14-58-19-917.jpg" alt="pictures" width="700" height="700">
-        <section class="header"><h1 class="header title">Слова для запоминания</h1>
-            <ul class="menu__list">
-                学生 - ученик
-                教授 - профессор
-                学校 - школа, университет
+        <img src="images/Picsart_25-06-22_14-58-19-917.jpg" alt="Картинка" />
+        <section class="words-section">
+            <h1 class="words-title">Слова для запоминания</h1>
+            <ul class="words-list">
+                <li>学生 - ученик</li>
+                <li>教授 - профессор</li>
+                <li>学校 - школа, университет</li>
             </ul>
         </section>
     </main>
+    
     <footer class="footer">
         <p>Сайт создан Ведерниковой Ириной, группа 27-АК</p>
     </footer>
+</body>
 </html>

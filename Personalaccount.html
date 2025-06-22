@@ -3,11 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Личный кабинет</title>
+    <style>
+    body { 
+        font-family: 'Montserrat', sans-serif; 
+        line-height: 1.5; color: #8c0473; 
+        margin: 0; padding: 0; 
+        background-color: #fafafa; 
+    } 
+
+    .header { 
+        display: flex; 
+        justify-content: 
+        space-between; align-items: 
+        center; padding: 20px; 
+        background-color: white; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    } 
+    
+    .header__img {
+        max-width: 200px; 
+        height: auto; 
+    } 
+    
+    h1 { 
+        font-size: 
+        2rem; margin: 0; 
+        color: #8c0473; 
+    } 
+    
+    .content { 
+        padding: 20px; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+    } 
+
+    .card { 
+        background-color: white; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        padding: 20px; 
+        flex-basis: 30%; 
+        transition: transform 0.3s;
+         transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+    .card h2 { 
+        font-size: 1.5rem; 
+        margin-bottom: 10px; 
+    } 
+
+    .card p { 
+        font-size: 1.2rem; 
+        color: #555;
+    } 
+
+</style>
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200">
+        <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип">
+        <h1>Личный кабинет</h1>
     </header>
+    <div class="content">
+        <div class="card">
+            <h2>Профиль</h2>
+            <p><strong>Имя:</strong> Алексей Иванов</p>
+            <p><strong>Email:</strong> alex@example.ru</p>
+            <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+        </div>
+        <div class="card">
+            <h2>Настройки аккаунта</h2>
+            <p>Измените пароль, email и другие настройки здесь.</p>
+        </div>
+    </div>
 </body>
 </html>
