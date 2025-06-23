@@ -15,16 +15,16 @@
         </a>
         <section>
             <div class="header-search-block">
-                    <form id="search_form" action="/search" method="get">
-                        <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
-                        <button type="button" class="header-search-submit"> <img src="images/icons8-search.svg" alt="Найти"></button>
+                    <form action="search" method="get">
+                        <input class="search" type="text" name="query" placeholder="Поиск...">
+                        <button class="interactive-button" type="submit">Искать</button>
                     </form>
             </div>
         </section>
         <section>
             <div class="sign-in">
-                <button class="button" button type="button">Вход</button>
-                <button class="button" button type="button">Регистрация</button>
+                <button class="interactive-button" button type="button">Вход</button>
+                <button class="interactive-button" button type="button">Регистрация</button>
             </div>
         </section>
     </header>
