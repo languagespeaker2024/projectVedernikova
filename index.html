@@ -3,130 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Документ</title>
-    <style> 
-    body { 
-        font-family: Montserrat, sans-serif; 
-        line-height: 1.5; color: #8c0473; 
-        margin: 0; padding: 0;
-    } 
-    
-    .header { 
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; padding: 20px; 
-        background-color: #f8f8f8; 
-    } 
-    
-    .header__img { 
-        max-width: 200px; 
-        height: auto; 
-    }
-    
-    .header-search-block { 
-        flex-grow: 1; 
-        text-align: left;
-    }
-
-    .header-search-block form { 
-        display: inline-flex; 
-        align-items: center; 
-    } 
-
-    input[type="search"] {
-        padding: 8px; font-size: 16px;
-        border-radius: 4px; 
-        border: 1px solid #ccc;
-    } 
-        
-    button.header-search-submit {
-        background-color: transparent; 
-        border: none; 
-        cursor: pointer;
-    } 
-    
-    nav.menu {
-        display: flex; 
-        list-style-type: none; 
-        margin: 0; 
-        padding: 0;
-    } 
-    
-    .menu__item {
-        margin-right: 20px;
-    } 
-
-    a.menu__link {
-        text-decoration: none; 
-        color: inherit;
-    } 
-
-    main.main {
-        display: grid; 
-        place-items: center; 
-        min-height: calc(100vh - 160px)
-    } 
-
-    img { 
-        max-width: 75%; 
-        height: auto;
-    }
-
-    section {
-        text-align: center; 
-        margin-bottom: 20px;
-    } 
-
-    ul.menu__list {
-         list-style-type: none; 
-         padding: 0;
-        } 
-
-    li {
-        font-size: 18px; 
-        margin-bottom: 10px;
-    } 
-
-    footer.footer {
-        background-color: #f8f8f8; 
-        padding: 20px; 
-        text-align: center; 
-    } 
-</style>
+    <title>Way To China</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" />
-        <div class="header-search-block">
-            <form id="search_form" action="/search" method="get">
-                <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов">
-                <button type="button" class="header-search-submit"></button>
-            </form>
-        </div>
-        <nav class="header__menu">
-            <ul class="menu__list">
-                <li class="menu__item menu__item--active"> <a class="menu__link" href="Personalaccount.html">Личный кабинет</a></li>
-                <li class="menu__item"> <a class="menu__link" href="Personaldictionary.html">Личный словарь</a></li>
-                <li class="menu__item"> <a class="menu__link" href="Tests.html">Тренировочные тесты</a></li>
-                <li class="menu__item"> <a class="menu__link" href="Applications.html">Подача заявок</a></li>
-            </ul>
-        </nav>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200">
+            <h1 class="header__title">Way to China</h1>
+        </a>
+        <section>
+            <div class="header-search-block">
+                    <form id="search_form" action="/search" method="get">
+                    <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
+                    <button type="button" class="header-search-submit"> <img src="images/icons8-search.svg" alt="Найти"></button>
+                    </form>
+            </div>
+        </section>
+        <section>
+            <div>
+                <button class="button" button type="button">Вход</button>
+                <button class="button" button type="button">Регистрация</button>
+            </div>
+        </section>
     </header>
-    
-    <main class="main">
-        <img src="images/Picsart_25-06-22_14-58-19-917.jpg" alt="Картинка" />
-        <section class="words-section">
-            <h1 class="words-title">Слова для запоминания</h1>
-            <ul class="words-list">
-                <li>学生 - ученик</li>
-                <li>教授 - профессор</li>
-                <li>学校 - школа, университет</li>
-            </ul>
+    <main class="main container">
+        <section>
+            <nav class="main__menu">
+                <h2>Меню</h2>
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--active"> <a class="menu__link" href="Personalaccount.html">Личный кабинет</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="Personaldictionary.html">Личный словарь</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="Tests.html">Тренировочные тесты</a></li>
+                    <li class="menu__item"> <a class="menu__link" href="Applications.html">Подача заявок</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="advice">
+            <div class="advice_wrap-left">
+                <h2 class="advice_title">Совет</h2>
+                <p>Для изучения китайского языка можно использовать книги,
+                    онлайн-платформы, приложения, языковые курсы. Важно регулярно практиковаться,
+                    запоминать ключевые структуры и не бояться делать ошибки.</p>
+            </div>
+            <div class="advice_wrap-right">
+                <img class="advice_image" src="images/Picsart_25-06-23_12-53-46-258.png" alt="picture" width="350" height="350">
+            </div>
+        </section>
+        <section class="main"><h1 class="main title">Слова для запоминания</h1>
+            <div class="word__list">
+                <div class="word__card">
+                    <h3 element class="word__word">您好</h3>
+                    <p element class="word__translation">Здравствуйте (вежливая форма)</p>
+                </div>
+                <div class="word__card">
+                    <h3 element class="word__word">再见</h3>
+                    <p element class="word__translation">До свидания</p>
+                </div>
+                <div class="word__card">
+                    <h3 element class="word__word">谢谢</h3>
+                    <p element class="word__translation">Спасибо</p>
+                </div>
+                <div class="word__card">
+                    <h3 element class="word__word">不客气</h3>
+                    <p element class="word__translation">Не за что</p>
+                </div>
+                <div class="word__card">
+                    <h3 element class="word__word">对不起</h3>
+                    <p element class="word__translation">Извините</p>
+                </div>
+            </div>
+        </section>
+         <section>
+            <h2>Регистрация</h2>
+            <form action="/" method="post">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Логин" required>
+                <fieldset>
+                    <div>
+                        <input type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+                </fieldset>
+                <fieldset>
+                    <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                    <button class="button" button type="button">Отмена</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Войти</h2>
+            <form action="/" method="post">
+                <input type="email" name="email" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <fieldset>
+                        <button class="button button--accent" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                 <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+            </form>
         </section>
     </main>
-    
-    <footer class="footer">
-        <p>Сайт создан Ведерниковой Ириной, группа 27-АК</p>
+    <footer class="footer container">
+        <p>Сайт создан Ведерниковой Ириной, группа 27-ИЯ</p>
     </footer>
-</body>
 </html>

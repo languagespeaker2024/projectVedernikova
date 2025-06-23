@@ -1,107 +1,16 @@
-<!DOCTYPE html> <html lang="ru"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Тестирование по китайскому языку</title> <!-- Подключаем шрифт Google Fonts --> <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <style> * { box-sizing: border-box; }
-
-    body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #f5f5f5;
-        color: #630052;
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        background-color: #fff;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    }
-    
-    img.header__img {
-        max-width: 200px; 
-        height: auto; 
-    }
-    
-    h1 {
-        margin: 0;
-        font-size: 2em;
-        color: #700065;
-    }
-    
-    main {
-        padding: 20px;
-    }
-    
-    section.test-section {
-        margin-bottom: 20px;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    }
-    
-    label {
-        display: block;
-        margin-top: 10px;
-    }
-    
-    input[type="radio"] {
-        margin-right: 5px;
-    }
-    
-    button.submit-btn {
-        padding: 10px 20px;
-        background-color: #6b97ff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    button.submit-btn:hover {
-        background-color: #63aeff;
-    }
-    
-    p.result-message {
-        margin-top: 20px;
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-</style>
-</head> <body> <header class="header"> <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200"> <h1>Тренировочные тесты по китайскому языку</h1> </header>
-
-<main>
-    <section class="test-section">
-        <h2>Простые слова и выражения</h2>
-        <form action="#" method="post">
-            <label for="q1">Выберите правильный перевод слова "谢谢":</label>
-            <input type="radio" id="q1-a" name="question1" value="A"><span>A. Привет</span><br>
-            <input type="radio" id="q1-b" name="question1" value="B"><span>B. Спасибо</span><br>
-            <input type="radio" id="q1-c" name="question1" value="C"><span>C. До свидания</span><br>
-            
-            <button type="submit" class="submit-btn">Проверить результат</button>
-        </form>
-        
-        <p class="result-message"></p>
-    </section>
-</main>
-
-<script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const selectedAnswer = document.querySelector('input[name="question1"]:checked');
-        if (!selectedAnswer) return alert("Выберите вариант ответа");
-        
-        let resultMessageElement = document.querySelector('.result-message');
-        resultMessageElement.textContent = '';
-        
-        switch(selectedAnswer.value) {
-            case 'B':
-                resultMessageElement.textContent = 'Правильно!';
-                break;
-            default:
-                resultMessageElement.textContent = 'Неправильно :(';
-        }
-    });
-</script>
-</body> </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200">
+        <h1>Тренировочные тесты</h1>
+    </header>
+</body>
+</html>
