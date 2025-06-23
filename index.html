@@ -16,13 +16,13 @@
         <section>
             <div class="header-search-block">
                     <form id="search_form" action="/search" method="get">
-                    <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
-                    <button type="button" class="header-search-submit"> <img src="images/icons8-search.svg" alt="Найти"></button>
+                        <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
+                        <button type="button" class="header-search-submit"> <img src="images/icons8-search.svg" alt="Найти"></button>
                     </form>
             </div>
         </section>
         <section>
-            <div>
+            <div class="sign-in">
                 <button class="button" button type="button">Вход</button>
                 <button class="button" button type="button">Регистрация</button>
             </div>
@@ -76,7 +76,7 @@
             </div>
         </section>
          <section>
-            <h2>Регистрация</h2>
+            <h1>Регистрация</h1>
             <form action="/" method="post">
                 <input type="text" name="name" placeholder="Имя" required>
                 <input type="email" name="email" placeholder="Логин" required>
@@ -94,8 +94,8 @@
             </form>
         </section>
         <section>
-            <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
-            <h2>Войти</h2>
+            <button class="close" type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+            <h1>Войти</h1>
             <form action="/" method="post">
                 <input type="email" name="email" placeholder="Логин" required>
                 <input type="password" name="password" placeholder="Пароль" required>
@@ -103,7 +103,7 @@
                         <button class="button button--accent" type="submit">Войти</button>
                     <button class="button" type="button">Отмена</button>
                 </fieldset>
-                 <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+                 <button class="close" button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
             </form>
         </section>
     </main>
