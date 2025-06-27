@@ -15,16 +15,16 @@
         </a>
         <section>
             <div class="header-search-block">
-                    <form action="search" method="get">
-                        <input class="search" type="text" name="query" placeholder="Поиск...">
-                        <button class="interactive-button" type="submit">Искать</button>
+                    <form id="search_form" action="/search" method="get">
+                    <input id="search-input" class="header-search-block__search" name="q" value="" type="search" placeholder="Поиск слов" >
+                    <button type="button" class="header-search-submit"> <img src="images/icons8-search.svg" alt="Найти"></button>
                     </form>
             </div>
         </section>
         <section>
             <div class="sign-in">
-                <button class="interactive-button" button type="button">Вход</button>
-                <button class="interactive-button" button type="button">Регистрация</button>
+                <button class="button" button type="button">Вход</button>
+                <button class="button" button type="button">Регистрация</button>
             </div>
         </section>
     </header>
@@ -76,7 +76,7 @@
             </div>
         </section>
          <section>
-            <h1>Регистрация</h1>
+            <h2>Регистрация</h2>
             <form action="/" method="post">
                 <input type="text" name="name" placeholder="Имя" required>
                 <input type="email" name="email" placeholder="Логин" required>
@@ -94,8 +94,8 @@
             </form>
         </section>
         <section>
-            <button class="close" type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
-            <h1>Войти</h1>
+            <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Войти</h2>
             <form action="/" method="post">
                 <input type="email" name="email" placeholder="Логин" required>
                 <input type="password" name="password" placeholder="Пароль" required>
@@ -103,11 +103,13 @@
                         <button class="button button--accent" type="submit">Войти</button>
                     <button class="button" type="button">Отмена</button>
                 </fieldset>
-                 <button class="close" button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+                 <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
             </form>
         </section>
     </main>
     <footer class="footer container">
         <p>Сайт создан Ведерниковой Ириной, группа 27-ИЯ</p>
     </footer>
+    <script src="scripts/script.js"></script>
+</body>
 </html>
