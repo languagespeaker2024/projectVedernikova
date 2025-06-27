@@ -6,8 +6,12 @@
     <title>Way To China</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
+     <div id="preloader">
+        <div class="spinner"></div>
+    </div>
     <header class="header container">
         <a class="header__logo-wrap" href="index.html">
             <img class="header__img" src="images/gradient-abstract-logo.png" alt="Логотип" width="200" height="200">
@@ -79,6 +83,27 @@
                 <button class="nextButton">></button>
             </div>
         </section>
+        <section class="swiper">
+            <h1>Грамматика</h1>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="images/slider1_11zon.jpg" alt="Slide 1" class="swiper-slide-img">
+                </div>
+                <div class="swiper-slide">
+                <img src="images/slider2.jpg" alt="Slide 2" class="swiper-slide-img">
+                </div>
+                <div class="swiper-slide">
+                <img src="images/slider3.jpg" alt="Slide 3" class="swiper-slide-img">
+                </div>
+                <div class="swiper-slide">
+                <img src="images/slider4.jpg" alt="Slide 4" class="swiper-slide-img">
+                </div>
+                <div class="swiper-slide">
+                <img src="images/slider5.jpg" alt="Slide 5" class="swiper-slide-img">
+                </div>
+            </div>
+        </section>
          <section id="login-form" class="popup-window">
             <button type="button" class="close-btn"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
             <h2>Войти</h2>
@@ -119,5 +144,6 @@
         <img src="images/icons8-slide-up-48.png" alt="Вернуться наверх">
     </button>
     <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
