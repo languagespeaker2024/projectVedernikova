@@ -21,10 +21,10 @@
                     </form>
             </div>
         </section>
-        <section>
+         <section>
             <div class="sign-in">
-                <button class="button" button type="button">Вход</button>
-                <button class="button" button type="button">Регистрация</button>
+                <button class="button login-btn" type="button">Вход</button>
+                <button class="button register-btn" type="button">Регистрация</button>
             </div>
         </section>
     </header>
@@ -48,7 +48,7 @@
                     запоминать ключевые структуры и не бояться делать ошибки.</p>
             </div>
             <div class="advice_wrap-right">
-                <img class="advice_image" src="images/Picsart_25-06-23_12-53-46-258.png" alt="picture" width="350" height="350">
+                <img class="advice_image" src="images/Picsart_25-06-23_12-53-46-258.png" alt="picture" width="750" height="750">
             </div>
         </section>
         <section class="main"><h1 class="main title">Слова для запоминания</h1>
@@ -79,7 +79,20 @@
                 <button class="nextButton">></button>
             </div>
         </section>
-         <section>
+         <section id="login-form" class="popup-window">
+            <button type="button" class="close-btn"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
+            <h2>Войти</h2>
+            <form action="/" method="post">
+                <input type="email" name="email" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <fieldset>
+                    <button class="button button--accent" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id="register-form" class="popup-window">
+            <button type="button" class="close-btn"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
             <h2>Регистрация</h2>
             <form action="/" method="post">
                 <input type="text" name="name" placeholder="Имя" required>
@@ -93,27 +106,18 @@
                 </fieldset>
                 <fieldset>
                     <button class="button button--accent" type="submit">Зарегистрироваться</button>
-                    <button class="button" button type="button">Отмена</button>
-                </fieldset>
-            </form>
-        </section>
-        <section>
-            <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
-            <h2>Войти</h2>
-            <form action="/" method="post">
-                <input type="email" name="email" placeholder="Логин" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <fieldset>
-                        <button class="button button--accent" type="submit">Войти</button>
                     <button class="button" type="button">Отмена</button>
                 </fieldset>
-                 <button type="button"><img src="images/icons8-крестик-48.png" alt="Закрыть окно" width="24" height="24"></button>
             </form>
         </section>
+        <div class="overlay"></div>
     </main>
     <footer class="footer container">
         <p>Сайт создан Ведерниковой Ириной, группа 27-ИЯ</p>
     </footer>
+     <button id="scroll-to-top-button" title="Вернуться наверх">
+        <img src="images/icons8-slide-up-48.png" alt="Вернуться наверх">
+    </button>
     <script src="scripts/script.js"></script>
 </body>
 </html>
